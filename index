@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart Clone - Compras Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Walmart Clone</h1>
+        </div>
+        <div class="carrinho">
+            <button id="carrinhoBtn">Carrinho (0)</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="produtos">
+            <h2>Produtos em Destaque</h2>
+            <div class="produto">
+                <img src="img/produto1.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>R$ 199,99</p>
+                <button class="adicionar" onclick="adicionarAoCarrinho('Produto 1', 199.99)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="img/produto2.jpg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>R$ 129,99</p>
+                <button class="adicionar" onclick="adicionarAoCarrinho('Produto 2', 129.99)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </section>
+
+        <section class="checkout">
+            <h2>Carrinho de Compras</h2>
+            <ul id="itensCarrinho"></ul>
+            <p id="totalCarrinho">Total: R$ 0,00</p>
+            <button id="checkoutBtn" onclick="finalizarCompra()">Finalizar Compra</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
