@@ -1,0 +1,84 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1d3c6d;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header .carrinho button {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+.produtos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+button.adicionar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.checkout {
+    margin-top: 50px;
+}
+
+#itensCarrinho {
+    list-style-type: none;
+}
+
+#checkoutBtn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
